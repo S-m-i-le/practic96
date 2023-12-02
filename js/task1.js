@@ -4,12 +4,17 @@
 //   *? Якщо користувач вводить "ECMAScript",
 //   *? то показати через alert: "Вірно!"
 //   *? інакше відобразити:"Не знаєте? ECMAScript!"
-const NAME="ECMAScript"
-const responce = prompt("Яка офіційна назва JavaScript?").trim()
+
+const NAME = "ECMAScript";
+const responce = prompt("Яка офіційна назва JavaScript?").trim();
 if (responce === NAME) {
-    alert("Вірно!")
+    alert("Вірно!");
 }
 else {
-    alert("Не знаєте? ECMAScript!")
+    alert("Не знаєте? ECMAScript!");
 }
-// console.log(responce)
+console.log(responce)
+
+// let StandName = "ECMAScript";
+// let responce = prompt("Яка офіційна назва JavaScript?");
+// console.log(responce==StandName? alert("Вірно!"): alert("Не знаєте? ECMAScript!"));

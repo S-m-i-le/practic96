@@ -12,11 +12,16 @@ const stones = [
   { name: "Сапфір", price: 400, quantity: 7 },
   { name: "Щебінь", price: 150, quantity: 100 },
 ];
-function calcTotalPrice(stones, stonesName) {
-  for (const item of stones) {
-    if (item.name === stonesName) {
-      return item.price * item.quantity;
-    }
-  }
-}
-console.log(calcTotalPrice(stones, "Діамант"));
+// function calcTotalPrice(stones, stonesName) {
+//   for (const item of stones) {
+//     if (item.name === stonesName) {
+//       return item.price * item.quantity;
+//     }
+//   }
+// }
+const calcTotalPrice = (stones, stonesName) =>
+  stones.map((stone => stone.name === stonesName) => {
+   stone.price * stone.quantity)
+
+  
+// console.log(calcTotalPrice(stones, "Діамант"));

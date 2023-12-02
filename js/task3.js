@@ -10,11 +10,17 @@ const salaries = {
   Ajax: 1470,
 };
 
-function calcSalaries(money) {
-    let sum = 0;
-    for (const salarie of Object.values(money)) {
-        sum += salarie;
-    }
-    return sum;
-}
-console.log(calcSalaries(salaries))
+// function calcSalaries(money) {
+//     let sum = 0;
+//     for (const salarie of Object.values(money)) {
+//         sum += salarie;
+//     }
+//     return sum;
+// }
+
+const calcSalaries = Object.values(salaries)
+  .reduce((previousValue, item) => {
+   return previousValue + item
+  }, 0);
+
+ console.log(calcSalaries);
